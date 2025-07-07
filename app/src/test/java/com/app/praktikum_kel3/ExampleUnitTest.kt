@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4
+package com.app.praktikum_kel3
 
 import org.junit.Test
 

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.app.praktikum_pertemuan4"
+    namespace = "com.app.praktikum_kel3"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.app.praktikum_kel1_2"
+        applicationId = "com.app.praktikum_kel3"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -41,7 +41,13 @@ android {
 
 dependencies {
 
+    //Navigation
     implementation(libs.androidx.navigation.compose)
+
+    // Retrofit + Gson + Coroutine (For API)
+    implementation ("com.squareup.retrofit2:retrofit:2.10.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.10.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

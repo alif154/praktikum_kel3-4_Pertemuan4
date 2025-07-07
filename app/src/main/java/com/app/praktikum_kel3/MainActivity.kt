@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4
+package com.app.praktikum_kel3
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
-import com.app.praktikum_pertemuan4.ui.theme.Praktikum_kel12Theme
+import com.app.praktikum_kel3.ui.theme.Praktikum_kel12Theme
 
 /**
  * MainActivity adalah titik masuk utama aplikasi Android ini.

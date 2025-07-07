@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4.ui.theme
+package com.app.praktikum_kel3.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

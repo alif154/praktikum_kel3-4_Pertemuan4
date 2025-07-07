@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4
+package com.app.praktikum_kel3
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets
@@ -13,9 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.app.praktikum_pertemuan4.components.BottomBar
-import com.app.praktikum_pertemuan4.navigation.Screen
-import com.app.praktikum_pertemuan4.navigation.SetupNavGraph
+import com.app.praktikum_kel3.components.BottomBar
+import com.app.praktikum_kel3.navigation.Screen
+import com.app.praktikum_kel3.navigation.SetupNavGraph
 
 /**
  * Fungsi utama untuk menjalankan struktur UI aplikasi.
@@ -32,7 +32,7 @@ fun MyApp(navController: NavHostController) {
     val currentRoute = currentBackStack?.destination?.route
 
     // Menentukan apakah bottom bar perlu ditampilkan berdasarkan halaman yang sedang aktif
-    val showBottomBar = currentRoute in listOf(Screen.Login.route, Screen.Home.route, Screen.Register.route)
+    val showBottomBar = currentRoute in listOf(Screen.Home.route, Screen.Profile.route)
 
     // Box sebagai wadah utama layout
     Box(modifier = Modifier.fillMaxSize()) {

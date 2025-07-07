@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4.screen
+package com.app.praktikum_kel3.screen
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -11,7 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.app.praktikum_pertemuan4.navigation.Screen
+import com.app.praktikum_kel3.navigation.Screen
 
 // Halaman hasil yang menerima input nama dari HomeScreen
 @Composable

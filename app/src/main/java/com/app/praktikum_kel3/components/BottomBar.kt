@@ -1,4 +1,4 @@
-package com.app.praktikum_pertemuan4.components
+package com.app.praktikum_kel3.components
 
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.animateFloatAsState
@@ -19,13 +19,28 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.app.praktikum_pertemuan4.navigation.Screen
+import com.app.praktikum_kel3.navigation.Screen
+
+/**
+ * Data class `BottomNavItem` merepresentasikan satu item pada navigasi bawah (BottomBar).
+ *
+ * @param route rute navigasi dari halaman yang akan dituju.
+ * @param icon composable yang merepresentasikan ikon tampilan dari item ini.
+ */
 
 // Data class untuk menyimpan item navigasi bawah
 data class BottomNavItem(
     val route: String,
     val icon: @Composable () -> Unit
 )
+
+/**
+ * Composable `BottomBar` menampilkan bilah navigasi bawah dengan dua item utama:
+ * Home dan Profile. Menyesuaikan tampilan berdasarkan halaman aktif.
+ *
+ * @param navController controller navigasi untuk mengatur navigasi antar halaman.
+ * @param modifier modifier opsional untuk penyesuaian tampilan luar komponen.
+ */
 
 // Komponen utama BottomBar
 @Composable
@@ -64,6 +79,15 @@ fun BottomBar(navController: NavHostController, modifier: Modifier = Modifier) {
         }
     }
 }
+
+/**
+ * Composable `BottomBarItem` merepresentasikan satu item di dalam BottomBar.
+ * Menampilkan ikon dan label serta menangani logika navigasi dan animasi.
+ *
+ * @param item objek item navigasi bawah.
+ * @param currentRoute route halaman yang sedang aktif saat ini.
+ * @param navController controller navigasi untuk berpindah halaman.
+ */
 
 // Komponen individual untuk setiap item pada BottomBar
 @Composable
@@ -128,6 +152,10 @@ fun BottomBarItem(
     }
 }
 
+/**
+ * Preview `BottomBar` yang ditampilkan di Android Studio Preview.
+ * Menggunakan NavController dummy untuk pratinjau tampilan.
+ */
 // Preview untuk menampilkan BottomBar di tampilan pratinjau Android Studio
 @Preview(showBackground = true)
 @Composable
